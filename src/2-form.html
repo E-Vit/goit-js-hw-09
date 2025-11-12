@@ -9,9 +9,25 @@
   </head>
   <body>
     <main>
+      <h1 class="main-title">Form</h1>
+      <a class="back-link" href="./index.html">Go back</a>
       <div class="container">
-        <h1 class="main-title">Form</h1>
-        <a class="back-link" href="./index.html">Go back</a>
+        <form class="feedback-form" autocomplete="off">
+          <div class="form-field">
+            <label class="form-label">
+              Email
+              <input type="email" name="email" autofocus />
+            </label>
+          </div>
+
+          <div class="form-field form-field-description">
+            <label class="form-label">
+              Message
+              <textarea name="message" rows="8"></textarea>
+            </label>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </main>
     <script type="module" src="./js/2-form.js"></script>
